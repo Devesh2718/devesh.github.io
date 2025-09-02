@@ -72,8 +72,8 @@
   </div>
 
   <script>
-    const API_KEY = "b3112909d21e4c5198c154553250209"; // Provided by user
-    const BASE_URL = "http://api.weatherapi.com/v1/current.json";
+    const API_KEY = "b3112909d21e4c5198c154553250209"; // aapka API key
+    const BASE_URL = "https://api.weatherapi.com/v1/current.json"; // FIXED (https)
 
     async function getWeather(city) {
       const input = document.getElementById("cityInput").value || city;
@@ -125,7 +125,7 @@
       `;
     }
 
-    // Load default city
+    // Default city load
     getWeather("London");
   </script>
 </body>
